@@ -85,6 +85,7 @@ android_library {
         "VendorSupport-Libs",
         "glide",
         "kotlin-stdlib",
+        "gamemode-settingsgoogle",
     ],
 
     libs: [
@@ -146,4 +147,10 @@ filegroup {
 android_library_import {
     name: "glide",
     aars: ["libs/glide-4.9.0.aar"],
+}
+
+java_import {
+    name: "gamemode-settingsgoogle",
+    jars: ["libs/gamemode.jar"],
+    sdk_version: "current",
 }

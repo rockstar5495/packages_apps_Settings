@@ -359,6 +359,15 @@ public final class PhoneData {
                 "1080 x 2400, 6.44 inches",
                 "64MP + 16MP + 2MP + 2MP, 32MP"
         ));
+          //Z01R
+          data.add(new AboutPhoneData(40,
+                 "Z01R",
+                 "4 x 2.7GHz, 4 x 1.7GHz",
+                 "Snapdragon 845",
+                 "3300",
+                 "1080 x 2246, 6.2 inches",
+                 "12MP + 8MP, 8MP"
+        ));
 }
     public static List<AboutPhoneData> getData() {
 	return data;

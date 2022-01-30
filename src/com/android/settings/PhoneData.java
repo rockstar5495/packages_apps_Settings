@@ -359,6 +359,15 @@ public final class PhoneData {
                 "1080 x 2400, 6.44 inches",
                 "64MP + 16MP + 2MP + 2MP, 32MP"
         ));
+	//Violet (Redmi Note 7 Pro)
+		data.add(new AboutPhoneData(1,
+			"violet",
+			"2 x 2.0 + 6 x 1.7 GHz",
+			"Snapdragon 675 (11 nm)",
+			"4000",
+			"1080 x 2340, 6.3 inches",
+			"48MP + 5MP + 13MP"
+		));
 }
     public static List<AboutPhoneData> getData() {
 	return data;

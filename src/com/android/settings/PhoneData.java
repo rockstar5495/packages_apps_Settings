@@ -323,24 +323,24 @@ public final class PhoneData {
                 "1080 x 2340, 6.4 inches",
                 "64MP + 8MP + 2MP + 2MP"
         ));
-	//ysl
-	data.add(new AboutPhoneData(36,
-		"ysl",
-		"8 x 2.0GHz",
-		"Snapdragon 625",
-		"3080",
-		"1440 x 720, 5.99 inches",
-		"12MP + 5MP, 16MP"
-	));
-	//RMX1971
-	data.add(new AboutPhoneData(37,
-		"RMX1971",
-		"2 x 2.3Ghz, 6 x 1.7Ghz",
-		"Snapdragon 712",
-		"4035",
-		"2340 x 1080, 6.3 inches",
-		"48MP + 8MP, 16MP"
-	));
+        //ysl
+        data.add(new AboutPhoneData(36,
+                "ysl",
+                "8 x 2.0GHz",
+                "Snapdragon 625",
+                "3080",
+                "1440 x 720, 5.99 inches",
+                "12MP + 5MP, 16MP"
+        ));
+        //RMX1971
+        data.add(new AboutPhoneData(37,
+                "RMX1971",
+                "2 x 2.3Ghz, 6 x 1.7Ghz",
+                "Snapdragon 712",
+                "4035",
+                "2340 x 1080, 6.3 inches",
+                "48MP + 8MP, 16MP"
+        ));
         // Sunny
         data.add(new AboutPhoneData(38,
                 "sunny",
@@ -359,15 +359,24 @@ public final class PhoneData {
                 "1080 x 2400, 6.44 inches",
                 "64MP + 16MP + 2MP + 2MP, 32MP"
         ));
-          //Z01R
-          data.add(new AboutPhoneData(40,
-                 "Z01R",
-                 "4 x 2.7GHz, 4 x 1.7GHz",
-                 "Snapdragon 845",
-                 "3300",
-                 "1080 x 2246, 6.2 inches",
-                 "12MP + 8MP, 8MP"
-        ));
+        //Z01R
+        data.add(new AboutPhoneData(40,
+               "Z01R",
+               "4 x 2.7GHz, 4 x 1.7GHz",
+               "Snapdragon 845",
+               "3300",
+               "1080 x 2246, 6.2 inches",
+               "12MP + 8MP, 8MP"
+      ));
+      //Violet (Redmi Note 7 Pro)
+      data.add(new AboutPhoneData(41,
+              "violet",
+              "2 x 2.0 + 6 x 1.7 GHz",
+              "Snapdragon 675 (11 nm)",
+              "4000",
+              "1080 x 2340, 6.3 inches",
+              "48MP + 5MP + 13MP"
+      ));
 }
     public static List<AboutPhoneData> getData() {
 	return data;

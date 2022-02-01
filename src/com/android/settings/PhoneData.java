@@ -377,6 +377,15 @@ public final class PhoneData {
               "1080 x 2340, 6.3 inches",
               "48MP + 5MP + 13MP"
       ));
+      // laurel_sprout (Mi A3)
+      data.add(new AboutPhoneData(42,
+              "laurel_sprout",
+              "4 x 2.0GHz + 4 x 1.8GHz",
+              "Snapdragon 665 (11nm)",
+              "4030",
+              "1560 x 720, 6.09inches",
+              "48MP + 8MP + 2MP, 32MP"
+        ));
 }
     public static List<AboutPhoneData> getData() {
 	return data;

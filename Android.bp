@@ -90,6 +90,7 @@ android_library {
         "kotlin-stdlib",
         "gamemode-settingsgoogle",
         "columbus-settingsgoogle",
+        "faceunlock_framework",
     ],
 
     libs: [

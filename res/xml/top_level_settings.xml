@@ -20,13 +20,15 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="top_level_settings">
 
-    <Preference
-        android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
+    <com.android.settingslib.widget.LayoutPreference
         android:icon="@drawable/ic_user"
-        android:key="top_level_userinfo"
+        android:key="top_level_usercard"
 	android:title="@string/about_user"
         android:summary="@string/userpref_summary"
-        android:order="-170" />
+        android:order="-170" 
+       android:layout="@layout/usercard"
+                settings:controller="com.android.settings.UserCard"
+/>
 
     <Preference
             android:fragment="com.android.settings.network.NetworkDashboardFragment"
@@ -55,13 +57,6 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
-    <Preference
-            android:key="top_level_octavi_lab"
-            android:title="@string/octavi_lab_dash_title"
-            android:summary="@string/octavi_lab_summary"
-            android:icon="@drawable/ic_settings_octavi"
-            android:order="-130"
-            android:fragment="com.octavi.lab.OctaviLab"/>
 
     <com.android.settingslib.RestrictedTopLevelPreference
             android:icon="@drawable/ic_settings_wallpaper_white"
@@ -173,14 +168,15 @@
             android:title="@string/header_category_system"
             android:summary="@string/system_dashboard_summary"/>
 
-    <Preference
-            android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-            android:icon="@drawable/ic_phone_info"
-            android:key="top_level_about_device"
+<Preference
+            android:key="firmware_version"
+	    android:icon="@drawable/ic_phone_info"
             android:order="20"
             android:title="@string/about_settings"
             android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
 
     <Preference
         android:icon="@drawable/ic_help"

@@ -106,7 +106,7 @@ public class TopLevelSettings extends DashboardFragment implements
         // Tint the homepage icons
         final int tintColor = Utils.getHomepageIconColor(getContext());
         final int count = screen.getPreferenceCount();
-        for (int i = 0; i < count; i++) {
+        for (int i = 1; i < count; i++) {
             final Preference preference = screen.getPreference(i);
             if (preference == null) {
                 break;

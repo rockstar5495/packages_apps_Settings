@@ -1,75 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/entity_header"
-    android:layout_marginTop="16dp"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/entity_header_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColorPrimary"
-                android:layout_marginTop="70dp"
-                android:layout_marginStart="16dp"
-                android:gravity="start"
-                android:textSize="35sp"/>
-
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="16dp"
-                android:textColor="?android:attr/textColorPrimary"
-                android:gravity="start"
-                android:textSize="15sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <View
-                android:layout_width="3dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginVertical="40dp"
-                android:background="@drawable/bar" />
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="150dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="20dp"
-                app:cardBackgroundColor="@color/usercardbg"
-                app:strokeWidth="3dp"
-                app:strokeColor="?android:attr/textColorPrimary"
-                android:layout_gravity="center_vertical">
-
-                <ImageView
-		    android:id="@+id/image_holder"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-		    android:scaleType="centerCrop"    
-                    android:src="@drawable/user"/>
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/entity_header" android:paddingTop="50dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="15dp">
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="20dp" app:contentPadding="20dp" app:strokeWidth="0dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="15sp" android:textColor="@color/acc" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="this is" android:layout_marginStart="18dp"/>
+                <TextView android:textSize="35sp" android:textColor="@color/text" android:gravity="start" android:id="@+id/entity_header_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="my name" android:layout_marginStart="18dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/acc3" android:gravity="start" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="ssss@gmail.com" android:layout_marginStart="18dp"/>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginStart="16dp" android:layout_marginEnd="20dp" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="150dp" app:strokeColor="?android:attr/textColorPrimary" app:strokeWidth="0dp">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:layout_width="160dp" android:layout_height="50dp" android:layout_marginTop="50dp" app:cardBackgroundColor="#68ffffff" app:cardCornerRadius="0dp" app:contentPadding="5dp" app:strokeWidth="0dp">
+                    <ImageView android:layout_gravity="top|center_horizontal" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="10dp" android:src="@drawable/cam" app:tint="@color/acc"/>
+                </com.google.android.material.card.MaterialCardView>
+                <ImageView android:id="@+id/image_holder" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/user" android:scaleType="centerCrop"/>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

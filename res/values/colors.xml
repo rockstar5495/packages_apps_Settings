@@ -230,4 +230,17 @@
     <color name="pureBlack">#000</color>
     <color name="divider_light">#14000000</color>
     <color name="card_outline_light">#33000000</color>
+
+    <color name="primary_bg">@android:color/system_neutral1_50</color>
+    <color name="secondary_bg">@android:color/system_accent1_0</color>
+    <color name="reverse">@android:color/system_accent1_1000</color>
+    <color name="text">@android:color/system_neutral2_800</color>
+    <color name="ternary">@android:color/system_neutral2_100</color>
+    <color name="border">@android:color/system_neutral2_200</color>
+    <color name="furn">@android:color/system_neutral2_600</color>
+    <color name="acc">@android:color/system_accent1_400</color>
+    <color name="accent_color">@android:color/system_accent1_600</color>
+    <color name="acc2">@android:color/system_accent1_300</color>
+    <color name="acc3">@android:color/system_accent1_600</color>
+
 </resources>

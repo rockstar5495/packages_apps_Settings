@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/tabindicator" android:layout_width="match_parent" android:layout_height="80dp" android:elevation="0dp" android:layout_marginHorizontal="10dp" android:layout_marginVertical="10dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="start|center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+            <com.google.android.material.card.MaterialCardView android:layout_width="35dp" android:layout_height="35dp" app:cardBackgroundColor="@color/primary_bg" app:cardCornerRadius="30dp" app:cardElevation="0dp" app:contentPadding="5dp" app:strokeColor="#00804d4d">
+                <ImageView android:layout_gravity="center" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_deviceinfo" app:tint="@color/acc3"/>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:textSize="21dp" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View more" android:layout_marginStart="10dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

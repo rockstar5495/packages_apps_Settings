@@ -1,55 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/entity_header"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginVertical="8dp"
-    android:padding="4dp"
-    android:elevation="8dp">
-
-    <LinearLayout
-	android:id="@+id/entity_header_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_weight="2"
-            android:orientation="vertical">
-
-	    <TextView 
-		android:textAppearance="@style/TextAppearance.HomepagePreferenceTitle" 
-                android:id="@+id/entity_header_title"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-                android:textSize="22sp"
-		android:textColor="?android:attr/textColorPrimary"
-		android:singleLine="true"/>
-
-            <TextView
-                android:id="@android:id/summary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="@string/usercard_summary"
-                android:textColor="?android:attr/textColorPrimary"
-                android:textSize="13sp"/>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/card_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0dp" android:paddingHorizontal="10dp" android:paddingVertical="10dp">
+    <FrameLayout android:id="@+id/owclick" android:background="@drawable/tabindicator" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="10dp">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                    <TextView android:textAppearance="@style/TextAppearance.HomepagePreferenceTitle" android:textSize="25dp" android:textColor="@color/reverse" android:ellipsize="marquee" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_user" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/acc3" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/userpref_summary" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView android:layout_width="45dp" android:layout_height="45dp" android:layout_marginEnd="10dp" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="30dp" app:cardElevation="0dp" app:strokeColor="@color/acc" app:strokeWidth="2dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/userimg" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_user" android:contentDescription="@null" app:tint="@color/acc3"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <com.google.android.material.card.MaterialCardView android:id="@+id/oclab" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="15dp" app:cardElevation="0dp" app:strokeColor="@color/acc" app:strokeWidth="0dp">
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="10dp">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_settings_octavi" android:layout_marginEnd="5dp" app:tint="@color/acc3"/>
+                        <TextView android:textColor="@color/reverse" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Octavi Lab"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/ocota" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1" android:layout_marginStart="10dp" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="15dp" app:cardElevation="0dp" app:strokeColor="@color/acc" app:strokeWidth="0dp">
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginHorizontal="10dp">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_settings_sync" android:layout_marginEnd="5dp" app:tint="@color/acc3"/>
+                        <TextView android:textColor="@color/reverse" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Octavi OTA"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <ImageView
-        android:contentDescription="@null"
-        android:layout_gravity="center"
-        android:id="@+id/entity_header_icon"
-        android:layout_width="48dp"
-        android:layout_height="48dp"/>
-
+    </FrameLayout>
 </FrameLayout>

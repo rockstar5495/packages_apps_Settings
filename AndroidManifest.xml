@@ -233,6 +233,31 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                        android:value="true" />
         </activity>
+        <activity
+            android:name=".Settings$UserCardFActivity"
+            android:label="User Card"
+            android:exported="true"
+            android:icon="@drawable/ic_homepage_network">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.deviceinfo.UserInfoFragement"/>
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
+        <activity android:name=".Settings$MobileNetworkListActivity"
+                  android:exported="true"
+                  android:label="@string/network_settings_title">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.MOBILE_NETWORK_LIST" />
+                <action android:name="android.settings.MANAGE_ALL_SIM_PROFILES_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.network.MobileNetworkListFragment"/>
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                       android:value="true" />
+        </activity>
+
 
         <activity
             android:name=".Settings$ConnectedDeviceDashboardActivity"

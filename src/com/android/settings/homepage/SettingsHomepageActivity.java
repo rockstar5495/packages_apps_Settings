@@ -61,24 +61,24 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     static ArrayList<String> text=new ArrayList<>();
     static {
         text.add("Thanks, for choosing Octavi!");
-	text.add("I wonder how many rejections you had");
-	text.add("Always remember that you're unique");
-        text.add("Constipated people don’t give a crap");
+        text.add("You do not find the happy life. You make it.");
+        text.add("Always remember that you're unique");
+        text.add("Whatever you are, be a good one.");
         text.add("Unicorns ARE real, we call them rhinos");
-        text.add("If there is a *WILL*, there are 500 relatives");
-        text.add("Those who throw dirt only lose ground");
-        text.add("I’d like to help you out");
-        text.add("Age is a question of mind over matter");
-        text.add("I’m an excellent housekeeper");
-        text.add("Change is good, but dollars are better");
-        text.add("If you cannot convince them, confuse them");
-        text.add("This sentence is a lie");
-        text.add("Make everyday a little less ordinary");
-        text.add("Stupidity is not a crime so you are free to go.");
-        text.add("I'm not insulting you. I'm describing you");
-        text.add("You're so fake, Barbie is jealous");
-        text.add("Believe you can, and you are halfway there");
-	text.add("Whatever you are, be a good one");
+        text.add("Only trust people who like big butts. They cannot lie.");
+        text.add("When nothing is going right, go left.");
+        text.add("This is the way!");
+        text.add("The hardest choices require the strongest wills.");
+        text.add("Choice. The problem is choice");
+        text.add("Keep your friends close, but your enemies closer.");
+        text.add("Life has no CTRL + Z");
+        text.add("If Monday had a face, I would punch it.");
+        text.add("Exercise? I thought you said extra fries.");
+        text.add("If you see corona wear a mask");
+        text.add("Stop asking best rom! It's always Octavi");
+        text.add("Why are you even reading this!");
+        text.add("One Day or Day One you decide");
+        text.add("Comfort is the greatest enemy");
     }
 
     @Override

@@ -18,8 +18,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
-    settings:keywords="@string/keywords_android_version">
+    android:title="@string/about_settings"
+    settings:keywords="@string/about_settings">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_layout_octavi_about"
@@ -29,4 +29,13 @@
         settings:allowDividerBelow="false"
         settings:iconSpaceReserved="false"/>
     <!-- <com.android.settings.OosAboutPreference/> -->
+ <com.android.settingslib.widget.LayoutPreference
+            android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+            android:icon="@drawable/ic_phone_info"
+            android:key="top_level_about_device"
+            android:order="20"
+            android:title="More Info"
+            android:layout="@layout/abt_bg"
+                        />
+
 </PreferenceScreen>

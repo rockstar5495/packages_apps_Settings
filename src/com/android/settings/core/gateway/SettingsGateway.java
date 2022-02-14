@@ -116,6 +116,7 @@ import com.android.settings.location.LocationSettings;
 import com.android.settings.location.WifiScanningFragment;
 import com.android.settings.network.MobileNetworkListFragment;
 import com.android.settings.network.NetworkDashboardFragment;
+import  com.android.settings.deviceinfo.UserInfoFragement;
 import com.android.settings.network.NetworkProviderSettings;
 import com.android.settings.network.apn.ApnEditor;
 import com.android.settings.network.apn.ApnSettings;
@@ -297,6 +298,7 @@ public class SettingsGateway {
             AutomaticStorageManagerSettings.class.getName(),
             StorageDashboardFragment.class.getName(),
             SystemDashboardFragment.class.getName(),
+            UserInfoFragement.class.getName(),
             NetworkDashboardFragment.class.getName(),
             ConnectedDeviceDashboardFragment.class.getName(),
             UsbDetailsFragment.class.getName(),
@@ -330,6 +332,7 @@ public class SettingsGateway {
     public static final String[] SETTINGS_FOR_RESTRICTED = {
             // Home page
             Settings.NetworkDashboardActivity.class.getName(),
+            Settings.UserCardFActivity.class.getName(),
             Settings.ConnectedDeviceDashboardActivity.class.getName(),
             Settings.AppDashboardActivity.class.getName(),
             Settings.DisplaySettingsActivity.class.getName(),

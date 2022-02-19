@@ -128,14 +128,14 @@ public class OosAboutPreference extends BasePreferenceController implements View
             tws.setText("Undefined");
 
         }else {
-            tws.setText(Html.fromHtml(getSystemProperty("ro.octavi.hw.cam").split("\\|")[0].replace(":","<br>").replace(","," | ")));
+            tws.setText(Html.fromHtml(getSystemProperty("ro.octavi.hw.cam").replace(":","<br>").replace(","," | ")));
         }
 
         tws=root.findViewById(R.id.namecpu);
         if(Objects.equals(getSystemProperty("ro.octavi.hw.cpu"),"")){
             tws.setText("Undefined");
         }else{
-            tws.setText(Html.fromHtml(getSystemProperty("ro.octavi.hw.cpu").split("\\|")[1]));
+            tws.setText(Html.fromHtml(getSystemProperty("ro.octavi.hw.cpu")));
         }
         if(!getSystemProperty("ro.octavi.buildtype").toLowerCase(Locale.ROOT).equals("official")){
             ImageView i = root.findViewById(R.id.vic);

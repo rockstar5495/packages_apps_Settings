@@ -260,7 +260,7 @@
     <string name="combined_status_bar_signal_icons_summary">Enable combined signal icons in status bar. Needs SystemUI restart or reboot</string>
 
     <!-- Owner info -->
-    <string name="about_user">Owner Info</string>
+    <string name="about_user">Owner Section</string>
     <string name="userpref_summary">Personal Information about current user</string>
     <string name="user_title">User Info</string>
 

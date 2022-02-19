@@ -26,9 +26,8 @@
 	android:title="@string/about_user"
         android:summary="@string/userpref_summary"
         android:order="-170" 
-       android:layout="@layout/usercard"
-                settings:controller="com.android.settings.UserCard"
-/>
+        android:layout="@layout/usercard"
+        settings:controller="com.android.settings.UserCard"/>
 
     <Preference
             android:fragment="com.android.settings.network.NetworkDashboardFragment"

@@ -386,6 +386,24 @@ public final class PhoneData {
               "1560 x 720, 6.09inches",
               "48MP + 8MP + 2MP, 32MP"
         ));
+      // vayu
+      data.add(new AboutPhoneData(43,
+              "vayu",
+              "1x2.96GHz+3x2.42GHz+4x1.78GHz",
+              "Snapdragon 860 (7nm)",
+              "5160",
+              "1080 x 2400, 6.67inches",
+              "48MP+8MP+2MP+2MP, 20MP"
+        ));
+      // bhima
+      data.add(new AboutPhoneData(44,
+              "bhima",
+              "1x2.96GHz+3x2.42GHz+4x1.78GHz",
+              "Snapdragon 860 (7nm)",
+              "5160",
+              "1080 x 2400, 6.67inches",
+              "48MP+8MP+2MP+2MP, 20MP"
+        ));
 }
     public static List<AboutPhoneData> getData() {
 	return data;
